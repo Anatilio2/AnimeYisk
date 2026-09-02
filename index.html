@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeYisk - Splash Screen</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  
+</head>
+<body class="bg-slate-950 font-sans min-h-screen">
+
+  
+        <!-- Splash Overlay -->
+        <div x-show="showSplash" 
+             x-transition:leave="transition ease-in duration-500 transform"
+             x-transition:leave-start="opacity-100 scale-100"
+             x-transition:leave-end="opacity-0 scale-95"
+             class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-950 text-center px-4 overflow-hidden">
+            
+            <!-- Luces de fondo decorativas (Glow effect) -->
+            <div class="absolute -top-40 -left-40 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+            <!-- Contenido Principal -->
+            <div class="relative z-10 max-w-2xl mx-auto space-y-6">
+                <!-- Logo -->
+                <div class="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl shadow-purple-500/10 mb-2">
+                    <span class="text-3xl font-black bg-gradient-to-br from-purple-400 to-pink-500 bg-clip-text text-transparent">AY</span>
+                </div>
+
+                <!-- Título con gradiente animación -->
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-purple-400 via-pink-500 to-purple-400 bg-clip-text text-transparent animate-pulse">
+                    AnimeYisk
+                </h1>
+
+                <!-- Descripción -->
+                <p class="text-slate-400 text-sm sm:text-base max-w-md mx-auto font-light">
+                    La colección personal de anime de Anatolio2. Organiza, califica y lleva el seguimiento de tus series favoritas en un solo lugar.
+                </p>
+
+                <!-- Botón de Entrada -->
+                <div class="pt-4">
+                    <a href="./galeri.html">
+                    <button @click="showSplash = false" 
+                            class="group relative inline-flex items-center justify-center px-8 py-3.5 font-bold text-white transition-all duration-300 bg-purple-600 rounded-xl hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-slate-950 cursor-pointer shadow-lg shadow-purple-600/30 hover:shadow-purple-500/50 hover:-translate-y-0.5">
+                        <span> Explorar Galería</span>
+                        <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pie de pantalla -->
+            <div class="absolute bottom-6 text-xs text-slate-600 tracking-widest uppercase">
+                Presiona para continuar
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
