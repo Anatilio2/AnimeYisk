@@ -36,8 +36,7 @@
 
 ## 📁 Estructura del Proyecto
 
-
- AnimeYisk/
+    AnimeYisk/
     │
     ├── index.html       # Componente de la pantalla de bienvenida 
     ├── galeri.html      # Aplicación principal
@@ -55,6 +54,6 @@
 
 
 ## 📄 Licencia
-    Este proyecto está bajo la Licencia MIT.
+Este proyecto está bajo la Licencia MIT.
 
     ```text
