@@ -4,13 +4,13 @@
 
 ![AnimeYisk Banner](https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1200&auto=format&fit=crop)
 
-    ---
+ ---
 
 ## 💡 ¿Por qué hice este proyecto?
 
    Todo comenzó un día cualquiera en el que estaba **totalmente aburrido**. En lugar de pasar el tiempo sin hacer nada, decidí abrir el editor de código y ponerme a crear una pagina  propia para gestionar mis animes, probar animaciones  con Tailwind, conectar APIs  y  almacenamiento local e importación de datos con js . ¡Y así nació AnimeYisk!
 
-    ---
+---
 
 ## ✨ Características Principales
 
@@ -32,7 +32,7 @@
     * **[SweetAlert2](https://sweetalert2.github.io/):** Modales y alertas personalizadas.
     * **[AniList GraphQL API](https://anilist.gitbook.io/anilist-apiv2-docs/):** Consulta de datos e imágenes de anime.
 
-    ---
+---
 
 ## 📁 Estructura del Proyecto
 
@@ -42,7 +42,7 @@
     ├── galeri.html      # Aplicación principal
     └── README.md        # Documentación del repositorio
 
-    ---
+---
 
 ## 👤 Autor
 
